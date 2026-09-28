@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>갤러리 | 사랑이야기스튜디오 대전점</title>
+  <meta name="description" content="사랑이야기스튜디오 대전점 촬영 사진 갤러리 — 가족사진, 증명·여권사진, 프로필사진.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="gallery">
+  <header id="site-header"></header>
+
+  <main>
+    <section>
+      <div class="wrap">
+        <div class="sec-head center">
+          <p class="eyebrow">Gallery</p>
+          <h1>갤러리</h1>
+          <p class="lead">사진을 누르면 크게 볼 수 있어요. 휴대폰에서는 옆으로 밀어서 다음 사진을 보세요.</p>
+        </div>
+
+        <div class="center">
+          <div class="filters" role="group" aria-label="사진 분류">
+            <button data-filter="all" aria-pressed="true">전체</button>
+            <button data-filter="family" aria-pressed="false">가족사진</button>
+            <button data-filter="id" aria-pressed="false">증명·여권</button>
+            <button data-filter="profile" aria-pressed="false">프로필</button>
+          </div>
+        </div>
+
+        <!--
+          ▼ 사진 추가 방법
+          1) images 폴더에 사진 파일을 넣고
+          2) 아래 한 줄을 복사해서 파일 이름·설명만 바꿔 주세요.
+             data-cat 은 family(가족) / id(증명) / profile(프로필) 중 하나
+          <figure class="shot" data-cat="family" data-zoom="설명"><img src="images/파일이름.jpg" alt="설명" loading="lazy"><figcaption>가족사진</figcaption></figure>
+        -->
+        <div class="gallery">
+          <figure class="shot" data-cat="family" data-zoom="흰 셔츠 가족사진"><img src="images/family-white.jpg" alt="흰 셔츠 커플룩 가족사진" loading="lazy"><figcaption>가족사진</figcaption></figure>
+          <figure class="shot" data-cat="family" data-zoom="부모님 효도사진"><img src="images/parents-portrait.jpg" alt="나란히 앉은 노부부 효도사진" loading="lazy"><figcaption>부모님 사진</figcaption></figure>
+          <figure class="shot" data-cat="family" data-zoom="3대 가족사진 — 데님 컨셉"><img src="images/family-denim.jpg" alt="데님 컨셉 3대 가족사진" loading="lazy"><figcaption>3대 가족사진</figcaption></figure>
+          <figure class="shot" data-cat="profile family" data-zoom="리마인드 웨딩"><img src="images/remind-wedding.jpg" alt="리마인드 웨딩 커플 프로필" loading="lazy"><figcaption>리마인드 웨딩</figcaption></figure>
+          <figure class="shot placeholder" data-cat="id">
+            <div class="ph-placeholder">
+              <div class="frame"><svg viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="38" r="20" fill="#c9d2dd"/><path d="M12 100c0-24 17-38 38-38s38 14 38 38z" fill="#c9d2dd"/></svg></div>
+              <small>증명·여권사진 샘플 준비 중</small>
+            </div>
+          </figure>
+        </div>
+
+        <div class="center" style="margin-top:40px">
+          <button class="btn btn-primary" data-book>이런 사진 찍고 싶어요 · 문의하기</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="site-footer"></footer>
+  <script src="js/site-info.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
